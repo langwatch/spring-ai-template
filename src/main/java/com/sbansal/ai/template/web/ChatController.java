@@ -22,4 +22,9 @@ public class ChatController {
 				.call()
 				.content();
 	}
+
+	@GetMapping("/another-endpoint")
+	public String anotherEndpoint() {
+		return "ok";
+	}
 }
